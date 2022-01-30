@@ -50,8 +50,8 @@ function canNest(arr1, arr2) {
 
 function numberSquares(n) {
     for (let i = 0; i <= n; i++) {
-        n += (n ^ 2) + n;
+        return n += (n ^ 2) + n;
     }
 }
 
-console.log(2);
+console.log(numberSquares(2));
