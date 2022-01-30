@@ -44,4 +44,14 @@ function canNest(arr1, arr2) {
     } else return false;
 }
 
-console.log(canNest([9, 9, 8], [8, 9]));
+// console.log(canNest([9, 9, 8], [8, 9]));
+
+// Create a function that calculates the number of different squares in an n * n square grid. Check the Resources tab.
+
+function numberSquares(n) {
+    for (let i = 0; i <= n; i++) {
+        n += (n ^ 2) + n;
+    }
+}
+
+console.log(2);
