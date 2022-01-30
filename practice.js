@@ -15,8 +15,10 @@ function timeForMilkAndCookies(dateToTest) {
 
 function f() {
 }
+
 function g() {
 }
+
 function whichIsLarger(f, g) {
     if (f > g) {
         return "f";
@@ -28,3 +30,18 @@ function whichIsLarger(f, g) {
 }
 
 // console.log(whichIsLarger(() => 15, () => 25));
+
+// Create a function that returns true if the first array can be nested inside the second.
+
+// arr1 can be nested inside arr2 if:
+
+// arr1's min is greater than arr2's min.
+// arr1's max is less than arr2's max.
+
+function canNest(arr1, arr2) {
+    if (Math.max(...arr1) < Math.max(...arr2) || Math.min(...arr1) > Math.min(...arr2)) {
+        return true;
+    } else return false;
+}
+
+console.log(canNest([9, 9, 8], [8, 9]));
