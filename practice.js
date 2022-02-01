@@ -50,7 +50,7 @@ function canNest(arr1, arr2) {
 
 function numberSquares(n) {
     for (let i = 0; i <= n; i++) {
-        return n += (n ^ 2) + n;
+        return n + ((n ^ 2) + n);
     }
 }
 
