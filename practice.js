@@ -54,4 +54,11 @@ function numberSquares(n) {
     }
 }
 
-console.log(numberSquares(2));
+// Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
+
+function largestSwap(num) {
+	return num >=  parseInt([...(num + "")].reverse().join(""));
+}
+
+console.log(largestSwap(27));
+console.log(largestSwap(65));
